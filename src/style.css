@@ -1,3 +1,4 @@
+/*General styles*/
 html{
     height: 100%;
 }
@@ -11,20 +12,12 @@ body{
     color: azure;
 }
 main{
-    flex: 1;
+    flex: auto;
     display: flex;
 }
-.select-container{
-    flex:0 0 auto;
-    width: 17%;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border:1px solid black;
-}
-.select-container ul{
-    list-style-type: none;
+footer{
+    text-align: center;
+    background:  rgba(248, 175, 175, 0.068);
 }
 a{
     text-decoration: none;
@@ -32,23 +25,65 @@ a{
 }
 a:hover{
     color:aquamarine;
-    
+}
+/*Select-Navigation-Styles*/
+.select-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    padding: 0 20px 0 20px;
+    border:1px solid black;
+    background:  rgba(248, 175, 175, 0.068)
+}
+.select-container ul{
+    list-style-type: none;
 }
 .title{
     font-size: 2.1rem;
 }
-/*Footer*/
-footer{
-    text-align: center;
-}
-
 .project-title ,.favorite-title{
     display: flex;
 }
 
-/*display-task-container*/
+/*Display-ToDo-Navigation-Styles*/
 .display-task-container{
-    flex:1;
+    flex:1 1 auto;
     border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 20px 0;
 }
-
+.display-todos{
+    min-width: 40%;
+    min-height: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background:  rgba(248, 175, 175, 0.068);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position:relative;
+    padding-bottom: 20px;
+}
+.items-container-todo{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.add-btn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: inline;
+}
+.item-todo{
+    display: flex;
+}
+.content-item{
+    flex: 1;
+}
