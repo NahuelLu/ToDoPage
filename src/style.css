@@ -33,7 +33,7 @@ a:hover{
     align-items: center;
     justify-content: center;
     flex: 0 0 auto;
-    padding: 0 20px 0 20px;
+    padding:40px 50px 40px 50px;
     border:1px solid black;
     background:  rgba(248, 175, 175, 0.068);
     margin: 10px;
@@ -46,8 +46,29 @@ a:hover{
 }
 .project-title ,.favorite-title{
     display: flex;
+    position: relative;
 }
-
+#add-btn-project{
+    width: 50px;
+    height:50px;
+    cursor: pointer;
+}
+#add-btn-project:hover{
+    width: 55px;
+    height: 55px;
+}
+.show-btn-projects{
+    position: absolute;
+    width:20px;
+    height:20px;
+    cursor: pointer;
+    left: -30px;
+    bottom: 10px;
+}
+.show-btn-projects:hover{
+    width: 23px;
+    height: 23px;
+}
 /*Display-ToDo-Navigation-Styles*/
 .display-task-container{
     flex:1 1 auto;
@@ -75,12 +96,21 @@ a:hover{
     flex-direction: column;
     align-items: center;
 }
-.add-btn{
+.add-btn-todo-container{
     position: absolute;
     right: 0;
     bottom: 0;
     display: inline;
     padding: 5px;
+}
+#add-btn-todo{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+#add-btn-todo:hover{
+    width: 45px;
+    height: 45px;
 }
 .item-todo{
     display: flex;
