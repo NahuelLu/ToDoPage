@@ -114,10 +114,23 @@ a:hover{
 }
 .item-todo{
     display: flex;
+    position:relative;
 }
 .content-item{
     flex: 1;
 }
 .display-task-container h1{
     margin:0 0 20px 0;
+}
+.check-btn-todo{
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    left:-30px;
+    bottom: 2px;
+    cursor:pointer;
+}
+.check-btn-todo:hover{
+    width: 25px;
+    height: 25px;
 }
