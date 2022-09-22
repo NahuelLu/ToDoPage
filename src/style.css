@@ -8,7 +8,7 @@ body{
     flex-direction: column;
     margin: 0;
     font-size: 1.6rem;
-    background: url('./library.jpg');
+    background: url('./assets/library.jpg');
     color: azure;
 }
 main{
@@ -25,14 +25,15 @@ a{
 }
 a:hover{
     color:aquamarine;
+    font-size: 1.7rem;
 }
 /*Select-Navigation-Styles*/
 .select-container{
+    flex: 0 0 auto;
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     justify-content: center;
-    flex: 0 0 auto;
     padding:40px 50px 40px 50px;
     border:1px solid black;
     background:  rgba(248, 175, 175, 0.068);
@@ -49,13 +50,13 @@ a:hover{
     position: relative;
 }
 #add-btn-project{
-    width: 50px;
-    height:50px;
+    width: 40px;
+    height:40px;
     cursor: pointer;
 }
 #add-btn-project:hover{
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
 }
 .show-btn-projects{
     position: absolute;
@@ -69,6 +70,7 @@ a:hover{
     width: 23px;
     height: 23px;
 }
+
 /*Display-ToDo-Navigation-Styles*/
 .display-task-container{
     flex:1 1 auto;
@@ -133,4 +135,11 @@ a:hover{
 .check-btn-todo:hover{
     width: 25px;
     height: 25px;
+}
+/**/
+.windowContainer{
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    background: blue;
 }
