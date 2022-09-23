@@ -17,7 +17,6 @@ main{
 }
 footer{
     text-align: center;
-    background:  rgba(248, 175, 175, 0.068);
 }
 a{
     text-decoration: none;
@@ -28,6 +27,9 @@ a:hover{
     font-size: 1.7rem;
 }
 /*Select-Navigation-Styles*/
+.select-container,.display-todos,.windowContainer,footer{
+    background: rgba(248, 175, 175, 0.068);
+}
 .select-container{
     flex: 0 0 auto;
     display:flex;
@@ -36,7 +38,6 @@ a:hover{
     justify-content: center;
     padding:40px 50px 40px 50px;
     border:1px solid black;
-    background:  rgba(248, 175, 175, 0.068);
     margin: 10px;
 }
 .select-container ul{
@@ -93,7 +94,6 @@ a:hover{
     position:relative; /*Para que carajo puse esto?*/
     border: 1px solid black;
     border-radius: 10px;
-    background: rgba(248, 175, 175, 0.068);
     padding: 20px 40px 30px 40px;
 }
 .items-container-todo{
