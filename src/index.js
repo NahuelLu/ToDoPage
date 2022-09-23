@@ -1,7 +1,7 @@
 import './style.css';
-import {addBtnTodo} from './addTodoBtn.js';
+import {displayTodoWindow} from './displayController';
 
 /*Application logic */
 
 const btnTodoAdd = document.querySelector('#add-btn-todo');
-btnTodoAdd.addEventListener('click',addBtnTodo);
+btnTodoAdd.addEventListener('click',displayTodoWindow);
