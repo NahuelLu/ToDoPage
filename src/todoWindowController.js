@@ -1,6 +1,8 @@
 import todo from './todo.js';
-import {displayTodoWindow} from './displayController.js';
-let todoList = [];
+import {displayTodoWindow,updateDisplayTodos} from './displayController.js';
+const defaultTodo = todo();
+defaultTodo.title='Untitled';
+let todoList = [defaultTodo];
 const createElmt = (element,parent)=>{
     const elemt = document.createElement(element);
     parent.appendChild(elemt);
@@ -46,7 +48,6 @@ const removeWindowTodo= ()=>{
 const saveTodo = (event)=>{
     event.preventDefault();
     let currentTodo = todo();
-    const activeBtn = document.querySelector('#add-btn-todo');
     currentTodo.title = document.querySelector('#title').value;
     currentTodo.description = document.querySelector('#description').value;
     currentTodo.notes = document.querySelector('#notes').value;
@@ -56,6 +57,7 @@ const saveTodo = (event)=>{
     todoList.push(currentTodo);
     activeBtnAdd();
     console.log(todoList);
+    updateDisplayTodos();//Edit here
 }
 const createPriority = (form)=>{
     const fieldSet = createElmt('fieldset',form);
@@ -104,4 +106,4 @@ const createWindow = ()=>{
     windowContainer.className='windowContainer';
 }
 
-export {createWindow,stopBtnAdd}
+export {createWindow,stopBtnAdd,todoList,createElmt}

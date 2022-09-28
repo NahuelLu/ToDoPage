@@ -29,6 +29,7 @@ a:hover{
 /*Select-Navigation-Styles*/
 .select-container,.display-todos,.windowContainer,footer{
     background: rgba(248, 175, 175, 0.068);
+    border: 1px solid black;
 }
 .select-container{
     flex: 0 0 auto;
@@ -37,7 +38,6 @@ a:hover{
     align-items: end;
     justify-content: center;
     padding:40px 50px 40px 50px;
-    border:1px solid black;
     margin: 10px;
 }
 .select-container ul{
@@ -71,11 +71,13 @@ a:hover{
     width: 23px;
     height: 23px;
 }
+.project-item:hover{
+    cursor: pointer;
+}
 
 /*Display-ToDo-Navigation-Styles*/
 .display-task-container{
     flex:1 1 auto;
-    border:1px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +94,6 @@ a:hover{
     flex-direction: column;
     justify-content: center;
     position:relative; /*Para que carajo puse esto?*/
-    border: 1px solid black;
     border-radius: 10px;
     padding: 20px 40px 30px 40px;
 }
